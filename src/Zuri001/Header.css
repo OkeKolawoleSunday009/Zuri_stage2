@@ -55,6 +55,12 @@
     display:block;
 
  }
+ #profile_img{
+    padding-left: 25px;
+ }
+ #item_forward{
+    /* background-color: red; */
+ }
  
 .center_item{
     width: 100%;
