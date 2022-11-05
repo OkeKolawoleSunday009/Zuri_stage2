@@ -1,0 +1,11 @@
+.section_icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.section_image{
+    height: 23px;
+    width: 24px;
+    border-radius: 0px;
+    
+}
