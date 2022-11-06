@@ -11,7 +11,7 @@
 .sub__flask{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 
 }
 form{
@@ -32,14 +32,16 @@ form{
 }
 .name{
     display: flex;
+    flex-direction: column;
 }
 .title{
     width: 448px;
 height: 44px;
+margin-bottom: 10px;
 
 /* Display md/Semibold */
 
-font-family: 'Inter';
+font-family: sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 26px;
@@ -59,7 +61,7 @@ color: #101828;
 .inputtext{
 
 
-width: 300px;
+width:342px;
 height: 44px;
 
 /* Base/White */
@@ -75,10 +77,6 @@ border-radius: 8px;
 
 /* Inside auto layout */
 
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
 }
 .inputtext2{
 
@@ -100,6 +98,9 @@ border-radius: 8px;
 /* Inside auto layout */
 
 }
+::placeholder{
+    padding-left: 10px;
+}
 .inputtext3{
     height: 132px;
    
@@ -112,19 +113,28 @@ border-radius: 8px;
     /* Gray/300 */
     
     border: 1px solid #D0D5DD;
+    
     /* Shadow/xs */
     
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     
+    
     /* Inside auto layout */
 
+}
+.inputtext3::placeholder{
+    margin-top: 40px !important;
 }
 .check{
     display: flex;
     gap: 5px;
     width: 100%;
     align-items: center;
+    color: #101828;
+}
+.check_paragraph{
+    color: #101828;
 }
 label{
     
@@ -146,7 +156,7 @@ color: #344054;
 }
 .submit{
     
-/* width: 720px; */
+/* width:100%; */
 height: 48px;
 
 /* Primary/600 */
@@ -169,16 +179,26 @@ color: white;
         flex-direction: column;
         gap: 8px;
     }
-    .inputtext, .inputtext2, .inputtext3{
-        width: 100%;
+    .inputtext, .submit, .inputtext2, .inputtext3{
+        /* width: 100%; */
+       
+        
     }
     .name{
         flex-direction: column;
+        /* background-color: red; */
+        flex: 1;
+        
+     
     }
+
     .title{
         font-size: 20px;
     }
     p{
+        font-size: 13px;
+    }
+    ::placeholder{
         font-size: 13px;
     }
 
